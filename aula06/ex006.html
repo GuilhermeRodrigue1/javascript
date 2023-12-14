@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIANDO DOM</title>
+    <style>
+
+        body {
+
+            background-color: antiquewhite;
+            color: rgb(29, 29, 29);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+<h1 id="title-text">Olá mundo</h1>
+
+<p>PARAGRAFO 1</p>
+<p>PARAGRAFO 2</p>
+
+<div class="classes">OLÁ MUNDO DIV DE CLASS</div>
+<br>
+<div id="ids">OLÁ MUNDO DIV DE ID</div>
+<br>
+
+<script>
+
+    /*var p1 = window.document.getElementsByTagName("div")[0]
+    window.document.write("A variavel Esta escrito assim: " + p1.innerText)*/
+
+    /*VARIAVEL TITLES QUE PUXA O ELEMENTO ID INDETIFICADO NO DOCUMENTO*/    
+    var titles = window.document.getElementById("title-text")
+
+    /*ESTA LINHA FALA QUE VAMOS ESCREVER AGUMA COISA DENTRO DO DOCUMENTO*/
+    titles.innerText = "Olá mundo 2"
+    window.document.write(titles.innerHTML)
+   
+
+
+    /*VARIAVEL QUE SELECIONA O TAG NAME*/
+    var par = window.document.getElementsByTagName(`p`)[0]
+
+    /*ESTA LINHA SELECIONA A VARIAVEL DE CIMA, ATRIBUI UM ESTILO E COLOR PARA RED*/
+    par.style.color = `red`
+
+    /*LINHA DE ALERTA DA JANELA QUE SELECIONA A VARIAVEL PAR EM INNERTEXT E CONTA QUANTOS CARACTERES TEM A FRASE DENTRO DE PAR*/
+    window.alert(`ATENÇÃO "${par.innerText}" sua frase tem: ${par.innerText.length} Caracteres`)
+
+    /*VARIAVEL QUE SELECIONA EM QUERY SELECTOR*/
+    var divclass = window.document.querySelector(`div.classes`)
+
+    /*LINHA QUE ATRIBUI UM ESTILO DE ACROD COM A QUERY DE CIMA*/
+    divclass.style.color = `red`
+
+    var divids = window.document.querySelector(`div#ids`)
+    divids.style.background = `blue`
+    divids.style.color = `white`
+
+
+    var nome = window.prompt(`Qual é seu nome? `)
+    window.alert(`Olá: ${nome} seu nome tem: ${nome.length} caracteres`)
+
+
+</script>
+
+</body>
+</html>

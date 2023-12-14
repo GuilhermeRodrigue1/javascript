@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIANDO DOM</title>
+    <style>
+
+        body {
+
+            background-color: antiquewhite;
+            color: rgb(29, 29, 29);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1 class="title-input">TITLE UNDEFINED</h1>
+
+    <p>Estou aprendendo e mexer com recursos DOM em Java Script</p>
+
+    <form action="" method="post">
+
+    <span>Digite um numero</span>
+    <input type="number" name="" id="" placeholder="0-1000" max="1000" min="0" required>
+
+
+    <br>
+    <br>
+
+
+    <span>Digite outro numero</span>
+    <input type="number" name="" id="" placeholder="0-1000" max="1000" min="0" maxlength="1000" required> 
+
+    <br>
+    <br>
+
+
+    <input type="submit" value="ENVIAR">
+    <input type="reset" value="LIMPAR">
+
+
+
+
+
+
+    </form>
+    
+    
+    <script>
+
+        ar inputtileprompt = window.prompt(`QUAL É O SEU TITULO? `)
+        
+        /*
+        var h1title = window.document.getElementsByClassName(`title-input`)[0]
+        
+        h1title.innerHTML = inputtileprompt */
+
+        window.document.getElementsByClassName(`title-input`)[0].innerHTML = ("Voce escreveu : " + inputtileprompt)
+
+
+        
+        
+
+        
+
+    </script>
+
+</body>
+</html>
