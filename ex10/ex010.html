@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+
+    <style>
+
+        body {
+
+            background-color: antiquewhite;
+            color: rgb(29, 29, 29);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .div-de-soma {
+
+            background-color: whitesmoke;
+            color: black;
+            margin: 20px 0px;
+            width: 300px;
+            height: 70px;
+            box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.37);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        input {
+
+            width: 130px;
+            border-radius: 10px;
+            height: 30px;
+            border: 1px solid rgb(151, 151, 117);
+
+        }
+
+        .button-soma {
+
+            background-color: rgb(219, 219, 219);
+            width: 100px;
+            height: 70px;
+            border: 1px solid black;
+            box-shadow: 1px 2px 6px rgb(154, 165, 125);
+            margin-left: 10px;
+            border: 1px solid rgb(194, 194, 148);
+            font-weight: bold;
+
+        }
+
+        .button-soma:hover {
+
+            background-color: burlywood;
+            transition: 0.3s;
+            font-size: 17px;
+            width: 110;
+            height: 80px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Somando Valores</h1>
+    <input type="number" name="num1" id="num1"> +
+    <input type="number" name="num2" id="num2">
+
+    <br>
+    <br>
+
+    <input type="button" value="SOMAR" onclick="somar()" class="button-soma">
+
+    <div id="somador" class="div-de-soma">
+
+        Resultado...
+
+    </div>
+
+<script>
+ 
+function somar() {
+
+    var number1 = window.document.getElementById(`num1`)
+    var number2  = window.document.getElementById(`num2`)
+    var resp = window.document.getElementById(`somador`)
+    var n1 = Number(number1.Value)
+    var n2 = Number(number2.value)
+    var soma = n1 + n2
+
+    resp.innerHTML = `A soma de ${n1} + ${n2} = ${soma}`
+
+    
+
+}
+
+
+</script>
+
+</body>
+</html>

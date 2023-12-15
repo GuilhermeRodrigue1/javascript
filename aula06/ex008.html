@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS DOM</title>
+    <style>
+
+        body {
+
+            background-color: antiquewhite;
+            color: rgb(29, 29, 29);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        #area {
+
+            background-color: aquamarine;
+            padding: 4px;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+<div id="area" onclick="clicar()" onmouseenter="entrada()" onmouseout="saida()">
+
+    Interaja...
+
+</div>
+    
+<script>
+ 
+    function clicar() {
+
+        var userclick = window.document.getElementById(`area`)
+        userclick.innerHTML = `Clicou!`
+        userclick.style.background = `purple`
+
+    }
+
+    function entrada() {
+
+        var userenter = window.document.getElementById(`area`)
+        userenter.innerHTML = `Entrou!`
+        userenter.style.background = `blue`
+        userenter.style.color = `whitesmoke`
+
+    }
+
+    function saida() {
+
+        var userssaida = window.document.getElementById(`area`)
+        userssaida.innerHTML = `Saiu!`
+        userssaida.style.background = `aquamarine`
+        userssaida.style.color = `black`
+
+
+    }
+
+    
+        
+
+</script>
+
+</body>
+</html>
