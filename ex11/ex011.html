@@ -84,6 +84,49 @@
 
         }
 
+        .div-result {
+
+            margin-top: 10px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            padding: 5px;
+            width: 600px;
+            color: black;
+            box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.397);
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .nome-do-carro {
+
+            margin-top: 10px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            padding: 5px;
+            width: 600px;
+            color: black;
+            box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.397);
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .container-divs {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
     </style>
 </head>
 <body>
@@ -100,7 +143,7 @@
 
         <form action="">
 
-            <label for="modelc">
+            <label for="">
                 
                 Modelo:
                 
@@ -122,7 +165,21 @@
 
         <br>
 
-        <input type="button" value="CHECAR VELOCIDADE" class="input-style-check">
+        <input type="button" value="CHECAR VELOCIDADE" class="input-style-check" onclick="calcularvel()">
+
+        <hr>
+
+        <div class="container-divs">
+
+            INFORMAÇÕES DE SAIDA
+            
+            <br>
+
+            <div class="div-result" id="res">UNDEFINED</div>
+
+            <div class="nome-do-carro" id="modelodocar">MODELO DO CARRO...</div>
+
+        </div>
 
     </main>
     
@@ -130,9 +187,37 @@
 
 <script>
 
+    function calcularvel() {
+
+        var inputdocarro = window.document.getElementById(`modelc`)
+        var nomecarro = inputdocarro.value
+        var resultcar = window.document.getElementById(`modelodocar`)
+        resultcar.innerHTML = (`Seu carro é: ${nomecarro}`)
+
+
+        var kmhora = window.document.getElementById(`kmh`)
+        var result = window.document.getElementById(`res`)
+        var vel_kmh = Number(kmhora.value)
+
+        
+
+        result.innerText = `Sua velocidade atual é de: ${vel_kmh} Km/h`
 
 
 
+        if (vel_kmh > 60) {                    
+
+            result.innerHTML += ` Você esta Multado!`
+            result.style.color = `red`
+
+        } else {
+
+            result.innerHTML += ` Voce esta dentro dos limites da velocidade!`
+            result.style.color = `green`
+
+        }
+
+    }
 
 </script>
 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO DO CARRO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <br>
+
+    <main class="margem-pr">
+
+        <h1 class="title">COMPUTADOR DE BORDO</h1>
+
+        <p class="paragrafo-explicativo">ESTE CARRO COM 1 LITRO CORRE UMA DISTANCIA DE 20KM.</p>
+
+        <hr>
+        
+        <div class="container-input">
+
+            <label for="" class="label-input">
+
+                PREÇO COMBUSTIVEL
+
+                <input type="number" name="" id="pricecomb">
+
+
+            </label>
+
+            <br>
+            <br>
+
+            <label for="cash" class="label-input">
+
+                DINHEIRO:
+
+                <input type="number" name="cash" id="cash" placeholder="Insira o valor" required>
+
+            </label>
+
+            <br>
+
+            <input type="button" value="CALCULAR" class="calcular-botão" onclick="calcular()">
+
+        </div>
+
+        <hr>
+
+        <section class="container-resp">
+        
+            <div class="respostas-div" id="combustiveldiv">
+
+                AGUARDANDO RESPOSTA...
+
+            </div>
+
+            <div class="respostas-div" id="kilometrosdiv">
+
+                AGUARDANDO RESPOSTA...
+
+            </div>
+        
+        </section>
+
+
+    </main>
+
+
+<script>
+
+    function calcular() {
+
+        var price = window.document.getElementById(`pricecomb`)
+
+
+        var dinheiro = window.document.getElementById(`cash`)
+        var combutivel = dinheiro.value / price.value
+        var kilometros = combutivel * 20
+
+
+        var respostadiv = window.document.getElementById(`combustiveldiv`)
+
+        respostadiv.innerText = `Voce consegue comprar ${combutivel} Litros de combutivel para seu carro!`
+
+        var kilome = window.document.getElementById(`kilometrosdiv`)
+
+        kilome.innerText = `Voce andara com ${combutivel} Litros de combustivel por ${kilometros} km/h`
+
+        if (dinheiro <= 0) {
+
+            kilome.innerText = `Por favor, Insira um valor!`
+            respostadiv.innerText = `Por favor, Insira um valor!`
+
+        }
+
+
+
+
+
+
+    }
+
+</script>
+
+</body>
+</html>

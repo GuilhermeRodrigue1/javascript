@@ -1,0 +1,108 @@
+* {
+
+margin: 0;
+padding: 0;
+font-family: Arial, Helvetica, sans-serif;
+color: whitesmoke;
+
+}
+
+body {
+
+background-color: antiquewhite;
+
+}
+
+.margem-pr {
+
+background-color: rgb(56, 59, 77);
+padding: 5px;
+box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.788);
+border-radius: 6px;
+margin: auto;
+max-width: 800px;
+
+}
+
+.title {
+
+text-align: center;
+
+}
+
+.respostas-div {
+
+margin: 10px;
+background-color: bisque;
+padding: 5px;
+color: black;
+font-weight: bold;
+width: 100%;
+
+}
+
+.container-resp {
+
+display: flex;
+width: 100%;
+background-color: rgba(240, 248, 255, 0.158);
+
+}
+
+.paragrafo-explicativo {
+
+text-align: center;
+font-weight: bold;
+margin: 20px 0px 20px 0px;
+font-size: 14px;
+
+}
+
+.container-input {
+
+margin: 20px 7px;
+
+}
+
+.label-input {
+
+font-weight: bold;
+
+}
+
+input {
+
+width: 150px;
+height: 30px;
+background-color: rgb(255, 239, 196);
+border: 0px;
+border-radius: 20px;
+text-align: center;
+color: black;
+font-weight: bold;
+
+}
+
+.calcular-botão {
+
+color: black;
+font-weight: bold;
+margin: 20px 10px 0px 10px;
+box-shadow: 1px 1px 6px black;
+
+}
+
+.calcular-botão:hover {
+
+    background-color: rgb(255, 207, 74);
+    box-shadow: 1px 1px 6px black;
+    
+    
+}
+
+.calcular-botão:active {
+
+    background-color: rgb(186, 255, 74);
+    box-shadow: 3px 2px 0px black;
+    
+}
