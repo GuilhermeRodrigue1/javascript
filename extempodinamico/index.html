@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPO DINAMICO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+
+        <section class="cabeçalho-pagina">
+
+            <img src="https://cdn.discordapp.com/attachments/1169686364221100153/1174869767492997160/19.png?ex=658e13bc&is=657b9ebc&hm=b63b5fa92f6cd5de288f4ca922cf5f9c4e2268f9607c552fcb0a8f16d06451eb&" alt="img" class="img-cabeçalho-pag">
+        
+            <div class="text-horario-dinamico">
+
+                PROJETO HORARIO DINAMICO
+
+            </div>
+        
+        </section>
+
+        <section class="conteudo-geral">
+            
+            <div class="Horario-div">
+
+                <img src="https://www.cysalys.com/wp-content/uploads/2018/01/sol-transparent-sun-icon-2-icon-sun-png-1018x994-300x293.png" alt="" class="img-icon-hora">
+
+                <p class="classe-paragrafo-tempo" id="saudações">BOM DIA!</p>
+
+
+            </div>
+
+            <div class="conteudo-de-entrada-geral">
+            
+                <p class="horario-atual">AGORA SÃO AS:</p>
+                <p class="horario-atual" id="idhora">00:00</p>
+
+            </div>    
+        
+        </section>
+
+        
+
+        
+
+
+
+
+
+    </main>
+
+</body>
+
+
+<script>
+
+    var hora = new Date()
+    var horario = parseFloat(hora.getHours())
+
+    var divhora = window.document.getElementById(`idhora`)
+    divhora.innerText = `${parseFloat(horario)} HORAS`
+    
+    if (horario >= 6.00 && horario <= 11.59) {
+        var boxdia = window.document.getElementById(`saudações`)
+        boxdia.innerText = `BOM DIA!!!`    
+    } else if (horario >= 12.00 && horario <= 18.59) {
+        var boxdia = window.document.getElementById(`saudações`)
+        boxdia.innerText = `BOA TARDE!!!`  
+    } else if (horario >= 18.00 && horario <= 23.59) {
+        var boxdia = window.document.getElementById(`saudações`)
+        boxdia.innerText = `BOA NOITE!!!`  
+    } else if (horario >= 0.00 && horario <= 5.59) {
+        var boxdia = window.document.getElementById(`saudações`)
+        boxdia.innerText = `BOA MADRUGA!!!`
+    }
+
+
+</script>
+
+
+
+</html>

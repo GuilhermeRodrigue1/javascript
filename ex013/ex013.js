@@ -11,4 +11,4 @@ if ((hora >= 6.00 && hora <= 11.59)) {
     console.log(`A hora é ${parseFloat(hora)}. Boa Madruga`);
 } else {
     console.log("Hora inválida");
-}
+} 
