@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPO DINAMICO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+
+        <section class="cabeçalho-pagina" id="cabeçalhoid">
+
+            <img src="https://cdn.discordapp.com/attachments/1169686364221100153/1174869767492997160/19.png?ex=658e13bc&is=657b9ebc&hm=b63b5fa92f6cd5de288f4ca922cf5f9c4e2268f9607c552fcb0a8f16d06451eb&" alt="img" class="img-cabeçalho-pag">
+        
+            <div class="text-horario-dinamico">
+
+                PROJETO HORARIO DINAMICO
+
+            </div>
+        
+        </section>
+
+        <section class="conteudo-geral">
+            
+            <div class="Horario-div">
+
+                <img src="https://cdn.discordapp.com/attachments/1186858167381012549/1187928116954398790/BLOQ.png?ex=6598ab45&is=65863645&hm=244a04667f566b9355969e38cf3997742eb0ef6e50659341d63fcdb9e24123bb&" alt="" class="img-icon-hora" id="iconetempo">
+
+                <p class="classe-paragrafo-tempo" id="saudações">BOM DIA!</p>
+
+
+            </div>
+
+            <div class="conteudo-de-entrada-geral">
+            
+                <p class="horario-atual">AGORA SÃO AS:</p>
+                <p class="horario-atual" id="idhora">00:00</p>
+
+            </div>    
+        
+        </section>
+
+        
+
+        
+
+
+
+
+
+    </main>
+
+</body>
+
+
+<script>
+
+    var hora = new Date()
+    var horario = parseFloat(hora.getHours())
+
+    var divhora = window.document.getElementById(`idhora`)
+    divhora.innerText = `${parseFloat(horario)} HORAS`
+    
+    if (horario >= 6.00 && horario <= 11.59) {
+
+        var boxdia = window.document.getElementById(`saudações`)
+        boxdia.innerText = `BOM DIA!!!`   
+        var iconetemp = window.document.querySelector(".img-icon-hora").src = "https://cdn.discordapp.com/attachments/1188536432927707196/1188538104722763887/Sem_Titulo-1.png?ex=659ae35e&is=65886e5e&hm=773e9c9f3e248d1905b53476d4dfffc5c9a29fef02e07bdc37ee32e5c112b120&"
+        
+        // SELETOR DA MAIN
+        var corpohtml = window.document.querySelector("main")
+
+        // ATRIBUI UMA VARIAVEL SÓ PARA ARMAZENAR UMA IMG!!!
+        var imgfundo = "https://img.freepik.com/fotos-gratis/por-do-sol-no-campo_23-2147632844.jpg?w=900&t=st=1703509165~exp=1703509765~hmac=2ba29e4ca201e665adb787e927b850ac3595eaa0c22f2cc6a399482f1eb7bb91"
+
+        // AQUI EU ME REFERENCIEI DIRETAMENTE NA MINHA MAIN E MEXI EM SEU BACKGROUND IMAGE E JUTAMENTE USEI A VARIAVEL QUE ARMAZENEI A URL.
+        corpohtml.style.backgroundImage = ` url(${imgfundo}) `
+
+        var cabeça = window.document.getElementById("cabeçalhoid")
+
+        cabeça.style.backgroundColor = `#4aadfd91`
+
+         
+    } else if (horario >= 12.00 && horario <= 17.59) {
+
+        var boxdia = window.document.getElementById(`saudações`)
+        boxdia.innerText = `BOA TARDE!!!`  
+        var iconetemp = window.document.querySelector(".img-icon-hora").src = "https://cdn.discordapp.com/attachments/1186858167381012549/1188570173838467093/balanca_ico.png?ex=659b013c&is=65888c3c&hm=47b80ba8e42e530c007c39625815f0fdb42984d91fc28539c98067585b11ba97&"
+
+
+        // SELETOR DA MAIN
+        var corpohtml = window.document.querySelector("main")
+
+        // ATRIBUI UMA VARIAVEL SÓ PARA ARMAZENAR UMA IMG!!!
+        var imgfundo = "https://img.freepik.com/fotos-gratis/bela-arquitetura-edificio-cidade-taipei_74190-3105.jpg?w=900&t=st=1703509213~exp=1703509813~hmac=f054b4966cef326bae4c7e65df8fa073fd46e7098496c6bb6ee399d8c9227aaa"
+
+        // AQUI EU ME REFERENCIEI DIRETAMENTE NA MINHA MAIN E MEXI EM SEU BACKGROUND IMAGE E JUTAMENTE USEI A VARIAVEL QUE ARMAZENEI A URL.
+        corpohtml.style.backgroundImage = ` url(${imgfundo}) `
+
+        var cabeça = window.document.getElementById("cabeçalhoid")
+
+        cabeça.style.backgroundColor = `#gui23`
+
+
+    } else if (horario >= 18.00 && horario <= 23.59) {
+        
+        var boxdia = window.document.getElementById(`saudações`)
+        boxdia.innerText = `BOA NOITE!!!` 
+        var iconetemp = window.document.querySelector(".img-icon-hora").src = "https://cdn.discordapp.com/attachments/1186858167381012549/1188571353134149642/hack_ico.png?ex=659b0255&is=65888d55&hm=e9a53bf62c8e44eb857903256ba49cb8114736b2f1cf63c5e354965e98c7b91c&" 
+
+        // SELETOR DA MAIN
+        var corpohtml = window.document.querySelector("main")
+
+        // ATRIBUI UMA VARIAVEL SÓ PARA ARMAZENAR UMA IMG!!!
+        var imgfundo = "https://wallpapercave.com/wp/wp5718373.jpg"
+
+        // AQUI EU ME REFERENCIEI DIRETAMENTE NA MINHA MAIN E MEXI EM SEU BACKGROUND IMAGE E JUTAMENTE USEI A VARIAVEL QUE ARMAZENEI A URL.
+        corpohtml.style.backgroundImage = ` url(${imgfundo}) `
+
+        var cabeça = window.document.querySelector(".cabeçalho-pagina")
+
+        var cabeça = window.document.getElementById("cabeçalhoid")
+
+        cabeça.style.backgroundColor = `#4aad72d`
+
+
+    } else if (horario >= 0.00 && horario <= 5.59) {
+
+        var boxdia = window.document.getElementById(`saudações`)
+        boxdia.innerText = `BOA MADRUGA!!!`
+        var iconetemp = window.document.querySelector(".img-icon-hora")
+
+        iconetemp.src = "https://cdn.discordapp.com/attachments/1186858167381012549/1188260484311429120/ICONE_BEST_TEAM.png?ex=6599e0d0&is=65876bd0&hm=66e72fec7982f64416cb3d11f39339f8209751e807853b31b53af97289b1ad72&"
+
+
+        // SELETOR DA MAIN
+        var corpohtml = window.document.querySelector("main")
+
+        // ATRIBUI UMA VARIAVEL SÓ PARA ARMAZENAR UMA IMG!!!
+        var imgfundo = "https://img.freepik.com/fotos-gratis/foto-de-baixo-angulo-do-hipnotizante-ceu-estrelado_181624-27925.jpg?w=900&t=st=1703509107~exp=1703509707~hmac=206a8209e9e91a366abc26f17f5e890ff07fb3bf13a31ab6bc1326179a189835"
+
+        // AQUI EU ME REFERENCIEI DIRETAMENTE NA MINHA MAIN E MEXI EM SEU BACKGROUND IMAGE E JUTAMENTE USEI A VARIAVEL QUE ARMAZENEI A URL.
+        corpohtml.style.backgroundImage = ` url(${imgfundo}) `
+
+        var cabeça = window.document.getElementById("cabeçalhoid")
+
+        cabeça.style.backgroundColor = `#1d5e69`
+
+    }
+
+
+</script>
+
+
+
+</html>
