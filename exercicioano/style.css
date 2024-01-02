@@ -1,0 +1,115 @@
+* {
+
+color: rgb(0, 0, 0);
+font-family: Arial, Helvetica, sans-serif;
+padding: 0px;
+margin: 0px;
+
+}
+
+body {
+
+background-color: #3F83D6;
+
+}
+
+h1 {
+
+text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+margin-top: 50px;
+color: whitesmoke;
+
+}
+
+.conteudo {
+
+background-color: aliceblue;
+margin: 50px auto 10px auto;
+width: 800px;
+border-radius: 10px;
+padding: 10px;
+
+}
+
+.box-radio-opt {
+
+display: flex;
+
+}
+
+label {
+
+display: flex;
+font-weight: bold;
+align-items: center;
+
+}
+
+
+.txt-sexo {
+
+margin-left: 10px;
+margin-right: 10px;
+
+}
+
+.title-sexo {
+
+font-weight: bold;
+font-size: 18px;
+
+}
+
+.title-nascimento {
+
+font-weight: bold;
+font-size: 18px;
+margin-right: 10px;
+
+}
+
+#verificar {
+
+margin-top: 15px;
+margin-bottom: 15px;
+padding: 6px;
+border-radius: 10px;
+background-color: rgb(71, 71, 129);
+color: whitesmoke;
+font-weight: bold;
+
+
+}
+
+#idade-calc {
+
+font-weight: bold;
+text-align: center;
+margin-top: 5px;
+margin-bottom: 5px;
+
+}
+
+#anoact {
+
+width: 120px;
+border-radius: 5px;
+background-color: #47478100;
+color: rgb(29, 29, 29);
+padding: 6px;
+
+}
+
+#imgpessoa {
+
+width: 200px;
+height: 200px;
+background-color: #3F83D6;
+border-radius: 10px;
+border: 1px solid black;
+margin: 10px auto;
+display: none;
+
+}

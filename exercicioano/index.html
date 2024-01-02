@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO ANO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <h1>VERIFICADOR DE IDADE</h1>
+
+    <div class="conteudo">
+
+        <label for="ano">
+
+            <p class="title-nascimento">ANO DE NASCIMENTO</p>
+
+            <input type="number" name="ano" id="anoact" placeholder="Digite um valor">
+
+        </label>
+        
+        <br>
+        <br>
+
+        <div class="box-radio-opt">
+
+            <p class="title-sexo">SEXO:</p>
+
+            <label for="Menino">
+
+                <p class="txt-sexo">Masculino</p>
+
+                <input type="radio" name="sexo" id="Menino">
+
+            </label>
+
+            <label for="Menina">
+
+                <p class="txt-sexo">Ferminino</p>
+
+                <input type="radio" name="sexo" id="Menina">
+
+            </label>
+
+        </div>
+
+        <div></div>
+
+        <input type="button" value="VERIFICAR" id="verificar" onclick="verificar()">
+        
+        <p id="idade-calc">PREENCHA ESTES CAMPOS ACIMA PARA VER O RESULTADO</p>
+
+        <img src="" alt="" id="imgpessoa">
+
+    </div>
+
+    <script src="javas.js"></script>
+
+</body>
+</html>
