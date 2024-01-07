@@ -1,0 +1,76 @@
+* {
+
+font-family: Arial, Helvetica, sans-serif;
+color: whitesmoke;
+
+}
+
+body {
+
+background-color: #212226;
+
+}
+
+.main-container {
+
+background-color: #2D313A;
+max-width: 800px;
+border-radius: 5px;
+margin: auto;
+box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.425);
+border: 2px solid rgb(66, 66, 66);
+
+}
+
+.espaçador {
+
+padding: 1.5px;
+background-color: gray;
+margin: 10px 10px 10px 10px;
+
+}
+
+h1 {
+
+text-align: center;
+text-shadow: 1px 1px 6px rgba(128, 128, 128, 0.692);
+
+}
+
+.botao-cfg {
+
+color: rgb(0, 0, 0);
+font-weight: bold;
+font-size: 18px;
+margin-left: 10px;
+margin-bottom: 10px;
+padding: 5px;
+width: 100px;
+border-radius: 15px;
+
+}
+
+label {
+
+margin-left: 10px;
+font-weight: bold;
+
+}
+
+input {
+
+color: black;
+width: 90px;
+margin-left: 10px;
+
+}
+
+.display {
+
+background-color: #212226;
+padding: 10px;
+margin: 10px;
+border-radius: 2px;
+color: whitesmoke;
+
+}
