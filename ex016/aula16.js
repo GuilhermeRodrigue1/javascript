@@ -1,0 +1,14 @@
+// DECLARANDO O VETOR / ARRAY
+let num = [1 ,5 ,7 ,8 ,4 ,6 ,4 ,5 ,9 , 0]
+
+// ORGANIZANDO OS VALORES DO VETOR
+num.sort()
+
+// EXIBE NO CONSOLE O QUANTO DE ELEMENTOS TEM NO VETOR / ARRAYS
+console.log (`A quantidade de elementos arrays é ${num.length}`)
+
+// ADICIONA VALOR NO FINAL DO VETOR, O VALOR É REFERENCIADO DE ACORDO COM O NUMERO QUE COLOCA DENTRO DO PARENTESES!
+num.push(1)
+
+// EXIBE NA TELA TODO O VETOR
+console.log(num)
