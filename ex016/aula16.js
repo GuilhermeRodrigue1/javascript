@@ -13,6 +13,7 @@ num.push(1)
 // EXIBE NA TELA TODO O VETOR
 console.log(num)
 
+/*
 for ( let posicao = 0 ; posicao < num.length ; posicao++ ) {
 
     console.log (`A posição atual é ${posicao} e o elemento é ${num[posicao]}`)
@@ -32,5 +33,19 @@ while (pos < num.length) {
 for (let posi in num) {
 
     console.log(`Posição é: ${pos} e o elemento array selecionado é: ${num[posi]}`)    
+
+}
+*/
+
+let position = num.indexOf(9)
+
+
+if (position == -1) {
+
+    console.log(`Não foi possivel encontrar o valor requisitado!`)
+
+} else { 
+
+    console.log(position)
 
 }
