@@ -13,24 +13,64 @@ function calculartudo() {
 
     // FIM LINKS
 
-    // CRIAÇÃO DE ELEMENTO DO JS INICIO
+    if (numberinput <= 0) {
 
-        // VARIAVEL QUE CRIA UM ELEMENTO "DIV" OU QUAL VOCE QUISER
-        var divadd = window.document.createElement("div")
-        // ADIÇÃO DE TEXTO DE CONTEUDO DENTRO DA DIV!
-        divadd.textContent = `Valor "${numberinput}" Adicionado!`
-        // ADIÇÃO DA VARIAVEL QUE CRIA DIV PARA A SECTION QUE IRA COMPORTAR ELA
-        sectiondiv.appendChild(divadd)
+        window.alert("Por favor insira um valor entre 1 e 100!")
 
-    // CRIAÇÃO DE ELEMENTO DO JS FIM
+    } else {
 
-    // ADICIONANDO VALORES A VARIAVEL COMPOSTA
-    var numberarray = arrayport.push(numberinput)
+        // CRIAÇÃO DE ELEMENTO DO JS INICIO
 
-    var lengtharray = arrayport.length
+            // CRIANDO ELEMENTO DENTRO DE VAR
+            var divadd = window.document.createElement("div")
+            // ADICIONANDO CONTEUDO DENTRO DA DIV QUE SERA CRIADA
+            divadd.textContent = `Valor "${numberinput}" Adicionado!`
+            // ADICIONANDO ELA DENTRO DA SECTION
+            sectiondiv.appendChild(divadd)
 
-    displaytst.innerHTML = `O numero do input é: ${numberinput} | ${arrayport} | A quantidade de elemento nesta array é: ${lengtharray}`
+        // CRIAÇÃO DE ELEMENTO DO JS FIM
+
+        // ADICIONANDO VALORES A VARIAVEL COMPOSTA
+        var numberarray = arrayport.push(numberinput)
+        // CRIANDO VARIAVEL PARA PUXAR LENGHT DE VARIAVEL EXTERNA NO CASO A COMPOSTA
+        var lengtharray = arrayport.length
+        armlength = lengtharray
+
+        displaytst.innerHTML = `O numero do input é: ${numberinput} | ${arrayport} | A quantidade de elemento nesta array é: ${lengtharray}`
+
+        entradainput.value = ""
+        var divoff = window.document.getElementById("divoffport")
+        divoff.style.display = "none"
+
+    }
 
 }
 
 var arrayport = []
+var armlength = ""
+
+function finalizar() {
+
+    if (armlength == 0) {
+
+        window.alert("Verifique se voce adicinou valores corretamente!")
+
+    } else {
+
+        var pconteudo1 = window.document.getElementsByClassName("paragrafo-ctd")[0].innerHTML = `Ao todo temos ${armlength} elementos dentro da Array ou Vetor`
+        
+        // DESCOMPACTANDO VALORES DA ARRAY
+        var menorvalorarray = Math.min(...arrayport)
+
+        var pconteudo2 = window.document.getElementsByClassName("paragrafo-ctd")[1].innerHTML = `O menor valor digitado é ${menorvalorarray}`
+        
+        var maiorvalorarray = Math.max(...arrayport)
+
+        var pconteud3 = window.document.getElementsByClassName("paragrafo-ctd")[2].innerHTML = `O maior valor digitado é ${maiorvalorarray}`
+
+        var divon = window.document.getElementById("divoffport")
+        divon.style.display = "flex"
+
+    }
+
+}
