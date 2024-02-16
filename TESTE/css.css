@@ -1,0 +1,41 @@
+* {
+
+font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+
+}
+
+p {
+
+margin: 10px;
+font-weight: bold;
+
+}
+
+img { 
+
+width: 100%;
+
+}
+
+.butão {
+
+margin: 10px;
+width: 100px;
+height: 80px;
+background-color: purple;
+color: aliceblue;
+
+}
+
+.butão:hover {
+
+    margin: 10px;
+    width: 100px;
+    height: 80px;
+    background-color: rgb(255, 146, 255);
+    color: rgb(24, 24, 24);
+    font-weight: bold;
+    
+    }
