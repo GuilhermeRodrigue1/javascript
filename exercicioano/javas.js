@@ -79,9 +79,7 @@ var imgpessoa = document.getElementById("imgpessoa")
             imgpessoa.style.display = "block"
             imgpessoa.src = "https://cdn.discordapp.com/attachments/1169772835816869980/1178041032319971379/silhueta.png?ex=65a2d7b5&is=659062b5&hm=55c5a07d6aa634aee9bc47a48066fb3d401105a2a56f97c59c893b3e7c14d289&"
 
-        }
-
-        else if (calcano >= 60) {
+        } else if (calcano >= 60) {
 
             imgpessoa.style.display = "block"
             imgpessoa.src = "https://cdn.discordapp.com/attachments/1169772835816869980/1185037192188399729/ECM_500_X_500.png?ex=65a09be3&is=658e26e3&hm=dc551f74468b8f1a6bc3af630d0e1fe87fd0f97a699e82b8a1ac80ebbfec2b69&"
@@ -89,6 +87,5 @@ var imgpessoa = document.getElementById("imgpessoa")
         }
 
     }
-
 
 }

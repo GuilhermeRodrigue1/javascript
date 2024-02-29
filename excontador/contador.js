@@ -26,7 +26,7 @@ function contando() {
             if (numberini < numberfim) {
 
                 // CONTA CRESCENTE
-                for (var nini = numberini;nini <= numberfim;nini += numberpass) {
+                for (  var nini = numberini  ;  nini <= numberfim  ;  nini += numberpass  ) {
 
                     displayer.innerHTML += `${nini} \u{1F449} `
             

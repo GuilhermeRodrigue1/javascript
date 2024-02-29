@@ -6,7 +6,7 @@ do {
 
 console.log(`O numero é: ${contador++}`)
 
-} while (contador <= 32142148127418094217321342)
+} while (contador <= 10)
 
 
 /* console.log('Tudo bem')
