@@ -41,6 +41,7 @@ function calculartudo() {
         entradainput.value = ""
         var divoff = window.document.getElementById("divoffport")
         divoff.style.display = "none"
+        entradainput.focus()
 
     }
 

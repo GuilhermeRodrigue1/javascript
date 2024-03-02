@@ -1,13 +1,90 @@
 * {
 
-font-family: Arial, Helvetica, sans-serif;
-margin: 0;
-padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 
 }
 
 body {
 
-background-color: beige;
+    background-color: beige;
+
+}
+
+h1 {
+    
+margin-top: 40px;
+text-align: center;
+
+}
+
+main {
+
+    background-color: rgba(0, 242, 250, 0);
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+
+}
+
+button {
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.btn-vermelho {
+
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100px;
+
+}
+
+.btn-azul {
+
+    background-color: rgb(0, 119, 255);
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100px;
+    
+}
+
+.btn-amarelo{
+
+    background-color: rgb(238, 255, 0);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100px;
+    
+}
+
+.btn-laranja {
+
+    background-color: rgb(255, 145, 0);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 100px;
+    
+}
+
+.display-flex-box {
+
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 
 }
